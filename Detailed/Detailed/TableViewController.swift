@@ -15,19 +15,20 @@ class TableViewController: UITableViewController {
         
         return cell
     }
-    
-//   func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let indexPath = tableView.indexPathForSelectedRow else {return}
-    
-//    let destination = UIStoryboardSegue.self as? DetailViewController else {return}
-//
-//        destination.character = Model.shared.characters[Model.Animation]
-    func prepare(for segue: TableViewController, sender: Any?) {
-        guard let indexPath = tableView.indexPathForSelectedRow
-            else {return}
-        guard segue.description is DetailViewController else {return}
-        let image = Model.shared
-    }
-
 }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+//    
+//        let destination = UIStoryboardSegue.self as? DetailViewController
+
+//        destination.character = Model.shared.characters[Model.Animation]
+
+//    func prepare(for segue: TableViewController, sender: Any?) {
+//        guard let indexPath = tableView.indexPathForSelectedRow
+//            else {return}
+//        guard segue.description is DetailViewController else {return}
+//        let image = Model.shared.image
+//    }
+//
+//}
 

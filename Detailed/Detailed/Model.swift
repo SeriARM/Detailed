@@ -39,10 +39,16 @@ class Model {
     
     func cells(for character: Animation) -> [UIImage] {
         // RETURN AN ARRAY OF IMAGES FOR THE GIVEN CHARACTER HERE
-        var newArray: Array<Any>
-        newArray.append(character.rawValue)
-        print(newArray)
-        return
+        let imag = UIImage(named: "\(character.rawValue)000")
+        var newArray: [UIImage] = []
+        guard let cellCounts = cellCounts[character] else { fatalError("no such cell")}
+        for num in (0...cellCounts) {
+            let imageName = "\(character.rawValue)\(num.stringPadded(to: 3))"
+            
+            newArray.append((UIImage(named: imageName) ?? imag!))
+        
+        }
+        return newArray
         
         }
 }

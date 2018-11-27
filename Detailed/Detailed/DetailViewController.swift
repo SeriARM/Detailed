@@ -11,10 +11,10 @@ class DetailViewController: UIViewController {
         super.viewWillAppear(animated)
         reloadInputViews()
         
-        let cells = Model.shared.cells(for: character)
+        let cells = Model.shared.cells(for: character!)
         imageAnimation.animationImages = cells
         imageAnimation.animationRepeatCount = 0
         imageAnimation.animationDuration = 4.0 // FIGURE THIS PART OUT
-            imageAnimation.startAnimating()
+        imageAnimation.startAnimating()
     }
 }
