@@ -64,31 +64,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="iY2-4a-Zdp">
-                                <rect key="frame" x="20" y="84" width="359" height="363"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="iY2-4a-Zdp">
+                                <rect key="frame" x="8" y="84" width="359" height="563"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwe-Hc-lRQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="163"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="60"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="6hb-WU-KnE">
-                                        <rect key="frame" x="0.0" y="203" width="359" height="160"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="160" id="4XE-LC-RAp"/>
-                                            <constraint firstAttribute="width" constant="120" id="8cg-nl-oYc"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="100" width="359" height="463"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="iY2-4a-Zdp" secondAttribute="trailing" constant="20" id="3c0-G2-shx"/>
-                            <constraint firstItem="HWy-A6-LKG" firstAttribute="bottom" secondItem="iY2-4a-Zdp" secondAttribute="bottom" constant="220" id="Zkf-RJ-Br8"/>
+                            <constraint firstItem="HWy-A6-LKG" firstAttribute="trailing" secondItem="iY2-4a-Zdp" secondAttribute="trailing" constant="8" id="3c0-G2-shx"/>
+                            <constraint firstItem="HWy-A6-LKG" firstAttribute="bottom" secondItem="iY2-4a-Zdp" secondAttribute="bottom" constant="20" id="Zkf-RJ-Br8"/>
                             <constraint firstItem="iY2-4a-Zdp" firstAttribute="top" secondItem="HWy-A6-LKG" secondAttribute="top" constant="20" id="fsE-ZK-jqw"/>
-                            <constraint firstItem="iY2-4a-Zdp" firstAttribute="leading" secondItem="HWy-A6-LKG" secondAttribute="leading" constant="20" id="gbw-nn-ogL"/>
+                            <constraint firstItem="iY2-4a-Zdp" firstAttribute="leading" secondItem="HWy-A6-LKG" secondAttribute="leading" constant="8" id="gbw-nn-ogL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HWy-A6-LKG"/>
                     </view>
