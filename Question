@@ -1,0 +1,9 @@
+1.After touching on a table cell, your screen will takes you to another screen with details about cell, The detail view controller contains details about table view cells.
+
+2. A segue give you connection between objects and other view controllers that give user power to acsses another view controller. If you have some object wich has more details and info and you store them in another View, here time to use segue to connect conection between object and viewe.
+
+3. Methods and Delegates but Segues needs less code.
+
+4. Custom cell types must be conditionally, You using it "as?" syntax.
+
+5. Using them in segues for the same reason.
